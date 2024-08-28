@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "transactionId": {
+      "type": "string"
+    },
+    "paymentCode": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "number"
+    },
+    "expTime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "paymentInstructions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "logo": {
+            "type": ["string", "null"]
+          },
+          "logoUrl": {
+            "type": ["string", "null"]
+          },
+          "details": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "language": {
+                  "type": "string"
+                },
+                "instruction": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "required": ["language", "instruction"]
+            }
+          }
+        },
+        "required": ["name", "details"]
+      }
+    }
+  },
+  "required": ["transactionId", "paymentCode", "amount", "expTime", "paymentInstructions"]
+}

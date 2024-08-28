@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "error": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string",
+          "enum": ["123-010"]
+        },
+        "message": {
+          "type": "string",
+          "enum": ["The token was expected to have 3 parts, but got 0."]
+        }
+      },
+      "required": ["code", "message"]
+    }
+  },
+  "required": ["timestamp", "error"]
+}

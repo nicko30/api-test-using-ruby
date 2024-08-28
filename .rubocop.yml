@@ -1,0 +1,436 @@
+# Gemfile must be ordered A to Z
+Bundler/OrderedGems:
+  Include:
+    - 'Gemfile'
+
+Layout/EmptyLinesAroundClassBody:
+  Include:
+    - '****.rb'
+
+Layout/SpaceAroundOperators:
+  Enabled: false
+
+Lint/EmptyWhen:
+  Enabled: false
+
+Lint/RedundantStringCoercion:
+  Enabled: true
+
+Lint/SelfAssignment:
+  Exclude:
+    - 'features/support/api/registrations/registrations.rb'
+
+Lint/UnusedMethodArgument:
+  Enabled: true
+
+Metrics/AbcSize:
+  Exclude:
+    - Rakefile
+  Max: 60
+
+Metrics/BlockLength:
+  Exclude:
+    - Rakefile
+  Max: 100
+
+Metrics/ClassLength:
+  Max: 1000
+
+Metrics/CyclomaticComplexity:
+  Exclude:
+    - Rakefile
+  Max: 20
+
+Metrics/MethodLength:
+  Exclude:
+    - Rakefile
+  Max: 60
+
+Metrics/PerceivedComplexity:
+  Exclude:
+    - Rakefile
+  Max: 20
+
+Naming/PredicateName:
+  Exclude:
+    - 'spec/**/*'
+    - 'features/support/api/utils/utils.rb'
+
+Security/Eval:
+  Enabled: true
+  Exclude:
+    - 'features/support/api/utils/utils.rb'
+    - 'features/step_definitions/api/compare_data/api.rb'
+    - 'features/support/hooks.rb'
+
+Style/BarePercentLiterals:
+  Enabled: true
+
+Style/CaseLikeIf:
+  Enabled: true
+
+Style/ConditionalAssignment:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: true
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/GuardClause:
+  Enabled: true
+
+Style/IfInsideElse:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: true
+
+Style/MixinUsage:
+  Exclude:
+    - 'features/support/env.rb'
+
+Style/Next:
+  Enabled: false
+
+Style/PercentLiteralDelimiters:
+  Enabled: true
+
+Style/RedundantBegin:
+  Enabled: false
+
+Style/RedundantInterpolation:
+  Enabled: false
+
+Style/RedundantPercentQ:
+  Enabled: true
+
+Style/RedundantRegexpEscape:
+  Enabled: true
+
+Style/RedundantSelf:
+  Enabled: true
+
+Style/RescueStandardError:
+  Enabled: true
+
+Style/SafeNavigation:
+  Enabled: true
+
+Style/SlicingWithRange:
+  Enabled: true
+
+Style/StringConcatenation:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: false
+
+Style/StringLiteralsInInterpolation:
+  Enabled: false
+
+Style/TernaryParentheses:
+  Enabled: true
+
+Style/TrailingCommaInArguments:
+  Enabled: true
+
+Layout/LineLength:
+  Max: 250
+
+Metrics/ParameterLists:
+  Max: 6
+  Enabled: true
+
+Gemspec/DeprecatedAttributeAssignment:
+  Enabled: true
+
+Gemspec/DevelopmentDependencies:
+  Enabled: false
+
+Gemspec/RequireMFA:
+  Enabled: false
+
+Layout/LineContinuationLeadingSpace:
+  Enabled: true
+
+Layout/LineContinuationSpacing:
+  Enabled: true
+
+Layout/LineEndStringConcatenationIndentation:
+  Enabled: true
+
+Layout/SpaceBeforeBrackets:
+  Enabled: true
+
+Lint/AmbiguousAssignment:
+  Enabled: true
+
+Lint/AmbiguousOperatorPrecedence:
+  Enabled: true
+
+Lint/AmbiguousRange:
+  Enabled: true
+
+Lint/ConstantOverwrittenInRescue:
+  Enabled: true
+
+Lint/DeprecatedConstants:
+  Enabled: true
+
+Lint/DuplicateBranch:
+  Enabled: true
+
+Lint/DuplicateMagicComment:
+  Enabled: true
+
+Lint/DuplicateMatchPattern:
+  Enabled: true
+
+Lint/DuplicateRegexpCharacterClassElement:
+  Enabled: true
+
+Lint/EmptyBlock:
+  Enabled: true
+
+Lint/EmptyClass:
+  Enabled: true
+
+Lint/EmptyInPattern:
+  Enabled: true
+
+Lint/IncompatibleIoSelectWithFiberScheduler:
+  Enabled: true
+
+Lint/LambdaWithoutLiteralBlock:
+  Enabled: true
+
+Lint/MixedCaseRange:
+  Enabled: true
+
+Lint/NoReturnInBeginEndBlocks:
+  Enabled: true
+
+Lint/NonAtomicFileOperation:
+  Enabled: true
+
+Lint/NumberedParameterAssignment:
+  Enabled: true
+
+Lint/OrAssignmentToConstant:
+  Enabled: true
+
+Lint/RedundantDirGlobSort:
+  Enabled: true
+
+Lint/RedundantRegexpQuantifiers:
+  Enabled: true
+
+Lint/RefinementImportMethods:
+  Enabled: true
+
+Lint/RequireRangeParentheses:
+  Enabled: true
+
+Lint/RequireRelativeSelfPath:
+  Enabled: true
+
+Lint/SymbolConversion:
+  Enabled: false
+
+Lint/ToEnumArguments:
+  Enabled: true
+
+Lint/TripleQuotes:
+  Enabled: true
+
+Lint/UnexpectedBlockArity:
+  Enabled: true
+
+Lint/UnmodifiedReduceAccumulator:
+  Enabled: true
+
+Lint/UselessRescue:
+  Enabled: true
+
+Lint/UselessRuby2Keywords:
+  Enabled: true
+
+Metrics/CollectionLiteralLength:
+  Enabled: true
+
+Naming/BlockForwarding:
+  Enabled: true
+
+Security/CompoundHash:
+  Enabled: true
+
+Security/IoMethods:
+  Enabled: true
+
+Style/ArgumentsForwarding:
+  Enabled: true
+
+Style/ArrayIntersect:
+  Enabled: true
+
+Style/CollectionCompact:
+  Enabled: true
+
+Style/ComparableClamp:
+  Enabled: true
+
+Style/ConcatArrayLiterals:
+  Enabled: true
+
+Style/DataInheritance:
+  Enabled: true
+
+Style/DirEmpty:
+  Enabled: true
+
+Style/DocumentDynamicEvalDefinition:
+  Enabled: true
+
+Style/EmptyHeredoc:
+  Enabled: true
+
+Style/EndlessMethod:
+  Enabled: true
+
+Style/EnvHome:
+  Enabled: true
+
+Style/ExactRegexpMatch:
+  Enabled: true
+
+Style/FetchEnvVar:
+  Enabled: false
+
+Style/FileEmpty:
+  Enabled: true
+
+Style/FileRead:
+  Enabled: true
+
+Style/FileWrite:
+  Enabled: false
+
+Style/HashConversion:
+  Enabled: false
+
+Style/HashExcept:
+  Enabled: true
+
+Style/IfWithBooleanLiteralBranches:
+  Enabled: true
+
+Style/InPatternThen:
+  Enabled: true
+
+Style/MagicCommentFormat:
+  Enabled: true
+
+Style/MapCompactWithConditionalBlock:
+  Enabled: true
+
+Style/MapToHash:
+  Enabled: true
+
+Style/MapToSet:
+  Enabled: true
+
+Style/MinMaxComparison:
+  Enabled: true
+
+Style/MultilineInPatternThen:
+  Enabled: true
+
+Style/NegatedIfElseCondition:
+  Enabled: true
+
+Style/NestedFileDirname:
+  Enabled: true
+
+Style/NilLambda:
+  Enabled: true
+
+Style/NumberedParameters:
+  Enabled: true
+
+Style/NumberedParametersLimit:
+  Enabled: true
+
+Style/ObjectThen:
+  Enabled: true
+
+Style/OpenStructUse:
+  Enabled: true
+
+Style/OperatorMethodCall:
+  Enabled: true
+
+Style/QuotedSymbols:
+  Enabled: false
+
+Style/RedundantArgument:
+  Enabled: true
+
+Style/RedundantArrayConstructor:
+  Enabled: true
+
+Style/RedundantConstantBase:
+  Enabled: true
+
+Style/RedundantCurrentDirectoryInPath:
+  Enabled: true
+
+Style/RedundantDoubleSplatHashBraces:
+  Enabled: true
+
+Style/RedundantEach:
+  Enabled: true
+
+Style/RedundantFilterChain:
+  Enabled: true
+
+Style/RedundantHeredocDelimiterQuotes:
+  Enabled: true
+
+Style/RedundantInitialize:
+  Enabled: true
+
+Style/RedundantLineContinuation:
+  Enabled: true
+
+Style/RedundantRegexpArgument:
+  Enabled: false
+
+Style/RedundantRegexpConstructor:
+  Enabled: true
+
+Style/RedundantSelfAssignmentBranch:
+  Enabled: true
+
+Style/RedundantStringEscape:
+  Enabled: true
+
+Style/ReturnNilInPredicateMethodDefinition:
+  Enabled: true
+
+Style/SelectByRegexp:
+  Enabled: true
+
+Style/StringChars:
+  Enabled: true
+
+Style/SwapValues:
+  Enabled: true
+
+Style/YAMLFileRead:
+  Enabled: true
+
+Metrics/BlockNesting:
+  Enabled: true
+  Max: 5

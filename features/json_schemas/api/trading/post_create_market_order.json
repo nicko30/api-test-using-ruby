@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "baseCoinCode": {
+          "type": "string"
+        },
+        "quoteCoinCode": {
+          "type": "string"
+        },
+        "orderType": {
+          "type": "string",
+          "enum": ["MARKET", "LIMIT", "STOP"]
+        },
+        "side": {
+          "type": "string",
+          "enum": ["BUY", "SELL"]
+        },
+        "transactionCode": {
+          "type": "string"
+        },
+        "transactionStatus": {
+          "type": "string",
+          "enum": ["IN_PROGRESS", "COMPLETED", "FAILED"]
+        },
+        "amountReceive": {
+          "type": "number"
+        },
+        "amountReceiveCoinType": {
+          "type": "string",
+          "enum": ["BASE_COIN", "QUOTE_COIN"]
+        },
+        "amountPaid": {
+          "type": "number"
+        },
+        "amountPaidCoinType": {
+          "type": "string",
+          "enum": ["BASE_COIN", "QUOTE_COIN"]
+        },
+        "price": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "baseCoinCode",
+        "quoteCoinCode",
+        "orderType",
+        "side",
+        "transactionCode",
+        "transactionStatus",
+        "amountReceive",
+        "amountReceiveCoinType",
+        "amountPaid",
+        "amountPaidCoinType",
+        "price"
+      ]
+    }
+  },
+  "required": ["code", "message", "data"]
+}

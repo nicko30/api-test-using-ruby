@@ -1,0 +1,92 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "uuid": {
+      "type": "string"
+    },
+    "preAuthenticatedTokenType": {
+      "type": "null"
+    },
+    "preAuthenticatedToken": {
+      "type": "null"
+    },
+    "preAuthenticatedTokenExpiresAt": {
+      "type": "null"
+    },
+    "accessTokenType": {
+      "type": "string"
+    },
+    "accessToken": {
+      "type": "string"
+    },
+    "accessTokenExpiresAt": {
+      "type": "string"
+    },
+    "refreshTokenType": {
+      "type": "string"
+    },
+    "refreshToken": {
+      "type": "string"
+    },
+    "refreshTokenExpiresAt": {
+      "type": "string"
+    },
+    "isAuthenticated": {
+      "type": "boolean"
+    },
+    "mfa": {
+      "type": "object",
+      "properties": {
+        "isAnyMfaEnabled": {
+          "type": "boolean"
+        },
+        "isAllMfaEnabled": {
+          "type": "boolean"
+        },
+        "isEmailMfaEnabled": {
+          "type": "boolean"
+        },
+        "isSmsMfaEnabled": {
+          "type": "boolean"
+        },
+        "isTotpMfaEnabled": {
+          "type": "boolean"
+        },
+        "emailMfaEnabledAt": {
+          "type": "null"
+        },
+        "smsMfaEnabledAt": {
+          "type": "null"
+        },
+        "totpMfaEnabledAt": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "isAnyMfaEnabled",
+        "isAllMfaEnabled",
+        "isEmailMfaEnabled",
+        "isSmsMfaEnabled",
+        "isTotpMfaEnabled",
+        "emailMfaEnabledAt",
+        "smsMfaEnabledAt",
+        "totpMfaEnabledAt"
+      ]
+    }
+  },
+  "required": [
+    "uuid",
+    "preAuthenticatedTokenType",
+    "preAuthenticatedToken",
+    "preAuthenticatedTokenExpiresAt",
+    "accessTokenType",
+    "accessToken",
+    "accessTokenExpiresAt",
+    "refreshTokenType",
+    "refreshToken",
+    "refreshTokenExpiresAt",
+    "isAuthenticated",
+    "mfa"
+  ]
+}

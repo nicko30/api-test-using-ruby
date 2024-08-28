@@ -1,0 +1,908 @@
+Token : SRM
+Request :
+{"symbol":"SRM-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:27:21.03127379+07:00","error":{"code":"TRANSACTION-000","message":"org.springframework.web.reactive.function.client.WebClientResponseException$BadRequest: 400 Bad Request from GET https://apidev2.vonix.id/v2/exchangeprovider/kucoin/fees/SRM-USDT"}}
+
+Request :
+{"symbol":"SRM-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:27:29.751093335+07:00","error":{"code":"TRANSACTION-000","message":"org.springframework.web.reactive.function.client.WebClientResponseException$BadRequest: 400 Bad Request from GET https://apidev2.vonix.id/v2/exchangeprovider/kucoin/fees/SRM-USDT"}}
+
+=======================
+Token : ALPHA
+Request :
+{"symbol":"ALPHA-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 200
+Response Body :
+{"code":"0","message":"success","data":{"baseCoinCode":"ALPHA","quoteCoinCode":"USDT","orderType":"MARKET","side":"BUY","transactionCode":"TM620793146530752","transactionStatus":"IN_PROGRESS","amountReceive":147.79235174,"amountReceiveCoinType":"BASE_COIN","amountPaid":8.03600,"amountPaidCoinType":"QUOTE_COIN","price":0.05413}}
+
+Request :
+{"symbol":"ALPHA-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 200
+Response Body :
+{"code":"0","message":"success","data":{"baseCoinCode":"ALPHA","quoteCoinCode":"USDT","orderType":"MARKET","side":"SELL","transactionCode":"TM620793166564864","transactionStatus":"IN_PROGRESS","amountReceive":7.0,"amountReceiveCoinType":"QUOTE_COIN","amountPaid":129.63679941,"amountPaidCoinType":"BASE_COIN","price":0.05424}}
+
+=======================
+Token : COTI
+Request :
+{"symbol":"COTI-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 200
+Response Body :
+{"code":"0","message":"success","data":{"baseCoinCode":"COTI","quoteCoinCode":"USDT","orderType":"MARKET","side":"BUY","transactionCode":"TM620793191120832","transactionStatus":"IN_PROGRESS","amountReceive":95.57945041,"amountReceiveCoinType":"BASE_COIN","amountPaid":8.03600,"amountPaidCoinType":"QUOTE_COIN","price":0.0837}}
+
+Request :
+{"symbol":"COTI-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 200
+Response Body :
+{"code":"0","message":"success","data":{"baseCoinCode":"COTI","quoteCoinCode":"USDT","orderType":"MARKET","side":"SELL","transactionCode":"TM620793227957184","transactionStatus":"IN_PROGRESS","amountReceive":7.0,"amountReceiveCoinType":"QUOTE_COIN","amountPaid":0,"amountPaidCoinType":"BASE_COIN","price":0.0839}}
+
+=======================
+Token : CVC
+Request :
+{"symbol":"CVC-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:28:25.081675626+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/CVC-USDT"}}
+
+Request :
+{"symbol":"CVC-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:28:32.195834009+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/CVC-USDT"}}
+
+=======================
+Token : GTC
+Request :
+{"symbol":"GTC-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 200
+Response Body :
+{"code":"0","message":"success","data":{"baseCoinCode":"GTC","quoteCoinCode":"USDT","orderType":"MARKET","side":"BUY","transactionCode":"TM620793273422784","transactionStatus":"IN_PROGRESS","amountReceive":12.32475735,"amountReceiveCoinType":"BASE_COIN","amountPaid":8.03600,"amountPaidCoinType":"QUOTE_COIN","price":0.6491}}
+
+Request :
+{"symbol":"GTC-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 200
+Response Body :
+{"code":"0","message":"success","data":{"baseCoinCode":"GTC","quoteCoinCode":"USDT","orderType":"MARKET","side":"SELL","transactionCode":"TM620793293233664","transactionStatus":"IN_PROGRESS","amountReceive":7.0,"amountReceiveCoinType":"QUOTE_COIN","amountPaid":0E-16,"amountPaidCoinType":"BASE_COIN","price":0.6519}}
+
+=======================
+Token : MLN
+Request :
+{"symbol":"MLN-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:28:58.450679452+07:00","error":{"code":"TRANSACTION-000","message":"org.springframework.web.reactive.function.client.WebClientResponseException$BadRequest: 400 Bad Request from GET https://apidev2.vonix.id/v2/exchangeprovider/kucoin/fees/MLN-USDT"}}
+
+Request :
+{"symbol":"MLN-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:29:06.882778174+07:00","error":{"code":"TRANSACTION-000","message":"org.springframework.web.reactive.function.client.WebClientResponseException$BadRequest: 400 Bad Request from GET https://apidev2.vonix.id/v2/exchangeprovider/kucoin/fees/MLN-USDT"}}
+
+=======================
+Token : NULS
+Request :
+{"symbol":"NULS-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:29:08.661079258+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/NULS-USDT"}}
+
+Request :
+{"symbol":"NULS-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:29:14.155211176+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/NULS-USDT"}}
+
+=======================
+Token : FRONT
+Request :
+{"symbol":"FRONT-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 200
+Response Body :
+{"code":"0","message":"success","data":{"baseCoinCode":"FRONT","quoteCoinCode":"USDT","orderType":"MARKET","side":"BUY","transactionCode":"TM620793353694144","transactionStatus":"IN_PROGRESS","amountReceive":12.80614695,"amountReceiveCoinType":"BASE_COIN","amountPaid":8.03600,"amountPaidCoinType":"QUOTE_COIN","price":0.6247}}
+
+Request :
+{"symbol":"FRONT-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 200
+Response Body :
+{"code":"0","message":"success","data":{"baseCoinCode":"FRONT","quoteCoinCode":"USDT","orderType":"MARKET","side":"SELL","transactionCode":"TM620793371203072","transactionStatus":"IN_PROGRESS","amountReceive":7.0,"amountReceiveCoinType":"QUOTE_COIN","amountPaid":0E-16,"amountPaidCoinType":"BASE_COIN","price":0.626}}
+
+=======================
+Token : HEGIC
+Request :
+{"symbol":"HEGIC-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:29:34.068841523+07:00","error":{"code":"TRANSACTION-000","message":"org.springframework.web.reactive.function.client.WebClientResponseException$BadRequest: 400 Bad Request from GET https://apidev2.vonix.id/v2/exchangeprovider/kucoin/fees/HEGIC-USDT"}}
+
+Request :
+{"symbol":"HEGIC-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:29:41.123266411+07:00","error":{"code":"TRANSACTION-000","message":"org.springframework.web.reactive.function.client.WebClientResponseException$BadRequest: 400 Bad Request from GET https://apidev2.vonix.id/v2/exchangeprovider/kucoin/fees/HEGIC-USDT"}}
+
+=======================
+Token : KEY
+Request :
+{"symbol":"KEY-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:29:43.274817011+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/KEY-USDT"}}
+
+Request :
+{"symbol":"KEY-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:29:49.894321755+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/KEY-USDT"}}
+
+=======================
+Token : NKN
+Request :
+{"symbol":"NKN-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 200
+Response Body :
+{"code":"0","message":"success","data":{"baseCoinCode":"NKN","quoteCoinCode":"USDT","orderType":"MARKET","side":"BUY","transactionCode":"TM620793433197504","transactionStatus":"IN_PROGRESS","amountReceive":132.66998341,"amountReceiveCoinType":"BASE_COIN","amountPaid":8.03600,"amountPaidCoinType":"QUOTE_COIN","price":0.0603}}
+
+Request :
+{"symbol":"NKN-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 200
+Response Body :
+{"code":"0","message":"success","data":{"baseCoinCode":"NKN","quoteCoinCode":"USDT","orderType":"MARKET","side":"SELL","transactionCode":"TM620793473809920","transactionStatus":"IN_PROGRESS","amountReceive":7.0,"amountReceiveCoinType":"QUOTE_COIN","amountPaid":0E-16,"amountPaidCoinType":"BASE_COIN","price":0.0604}}
+
+=======================
+Token : FX
+Request :
+{"symbol":"FX-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:30:19.544013244+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/FX-USDT"}}
+
+Request :
+{"symbol":"FX-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:30:25.452155091+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/FX-USDT"}}
+
+=======================
+Token : POLS
+Request :
+{"symbol":"POLS-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 200
+Response Body :
+{"code":"0","message":"success","data":{"baseCoinCode":"POLS","quoteCoinCode":"USDT","orderType":"MARKET","side":"BUY","transactionCode":"TM620793503055360","transactionStatus":"IN_PROGRESS","amountReceive":34.36426116,"amountReceiveCoinType":"BASE_COIN","amountPaid":8.03600,"amountPaidCoinType":"QUOTE_COIN","price":0.2328}}
+
+Request :
+{"symbol":"POLS-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 200
+Response Body :
+{"code":"0","message":"success","data":{"baseCoinCode":"POLS","quoteCoinCode":"USDT","orderType":"MARKET","side":"SELL","transactionCode":"TM620793525680064","transactionStatus":"IN_PROGRESS","amountReceive":7.0,"amountReceiveCoinType":"QUOTE_COIN","amountPaid":0E-16,"amountPaidCoinType":"BASE_COIN","price":0.2335}}
+
+=======================
+Token : QTUM
+Request :
+{"symbol":"QTUM-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:30:46.142059917+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/QTUM-USDT"}}
+
+Request :
+{"symbol":"QTUM-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:30:52.575975676+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/QTUM-USDT"}}
+
+=======================
+Token : RNDR
+Request :
+{"symbol":"RNDR-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 200
+Response Body :
+{"code":"0","message":"success","data":{"baseCoinCode":"RNDR","quoteCoinCode":"USDT","orderType":"MARKET","side":"BUY","transactionCode":"TM620793556838336","transactionStatus":"IN_PROGRESS","amountReceive":1.42778104,"amountReceiveCoinType":"BASE_COIN","amountPaid":8.04400,"amountPaidCoinType":"QUOTE_COIN","price":5.6031}}
+
+Request :
+{"symbol":"RNDR-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 200
+Response Body :
+{"code":"0","message":"success","data":{"baseCoinCode":"RNDR","quoteCoinCode":"USDT","orderType":"MARKET","side":"SELL","transactionCode":"TM620793602941888","transactionStatus":"IN_PROGRESS","amountReceive":7.0,"amountReceiveCoinType":"QUOTE_COIN","amountPaid":0E-16,"amountPaidCoinType":"BASE_COIN","price":5.627}}
+
+=======================
+Token : TLM
+Request :
+{"symbol":"TLM-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 200
+Response Body :
+{"code":"0","message":"success","data":{"baseCoinCode":"TLM","quoteCoinCode":"USDT","orderType":"MARKET","side":"BUY","transactionCode":"TM620793646130688","transactionStatus":"IN_PROGRESS","amountReceive":874.31693989,"amountReceiveCoinType":"BASE_COIN","amountPaid":8.03600,"amountPaidCoinType":"QUOTE_COIN","price":0.00915}}
+
+Request :
+{"symbol":"TLM-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 200
+Response Body :
+{"code":"0","message":"success","data":{"baseCoinCode":"TLM","quoteCoinCode":"USDT","orderType":"MARKET","side":"SELL","transactionCode":"TM620793687179200","transactionStatus":"IN_PROGRESS","amountReceive":7.0,"amountReceiveCoinType":"QUOTE_COIN","amountPaid":0E-16,"amountPaidCoinType":"BASE_COIN","price":0.00917}}
+
+=======================
+Token : VET
+Request :
+{"symbol":"VET-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 200
+Response Body :
+{"code":"0","message":"success","data":{"baseCoinCode":"VET","quoteCoinCode":"USDT","orderType":"MARKET","side":"BUY","transactionCode":"TM620793690125248","transactionStatus":"IN_PROGRESS","amountReceive":338.55268726,"amountReceiveCoinType":"BASE_COIN","amountPaid":8.03600,"amountPaidCoinType":"QUOTE_COIN","price":0.02363}}
+
+Request :
+{"symbol":"VET-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 200
+Response Body :
+{"code":"0","message":"success","data":{"baseCoinCode":"VET","quoteCoinCode":"USDT","orderType":"MARKET","side":"SELL","transactionCode":"TM620793722682880","transactionStatus":"IN_PROGRESS","amountReceive":7.0,"amountReceiveCoinType":"QUOTE_COIN","amountPaid":0E-16,"amountPaidCoinType":"BASE_COIN","price":0.02364}}
+
+=======================
+Token : WAN
+Request :
+{"symbol":"WAN-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:32:29.855389384+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/WAN-USDT"}}
+
+Request :
+{"symbol":"WAN-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:32:37.423575841+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/WAN-USDT"}}
+
+=======================
+Token : RSR
+Request :
+{"symbol":"RSR-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 200
+Response Body :
+{"code":"0","message":"success","data":{"baseCoinCode":"RSR","quoteCoinCode":"USDT","orderType":"MARKET","side":"BUY","transactionCode":"TM620793774452224","transactionStatus":"IN_PROGRESS","amountReceive":2054.44273240,"amountReceiveCoinType":"BASE_COIN","amountPaid":8.03600,"amountPaidCoinType":"QUOTE_COIN","price":0.003894}}
+
+Request :
+{"symbol":"RSR-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 200
+Response Body :
+{"code":"0","message":"success","data":{"baseCoinCode":"RSR","quoteCoinCode":"USDT","orderType":"MARKET","side":"SELL","transactionCode":"TM620793793445824","transactionStatus":"IN_PROGRESS","amountReceive":7.0,"amountReceiveCoinType":"QUOTE_COIN","amountPaid":0E-16,"amountPaidCoinType":"BASE_COIN","price":0.003899}}
+
+=======================
+Token : USDT
+Request :
+{"symbol":"USDT-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 400
+Response Body :
+{"timestamp":"2024-08-09T15:33:01.483333253+07:00","error":{"code":"TRANSACTION-001","message":"Base and Quoted Coin Code are the same"}}
+
+Request :
+{"symbol":"USDT-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 400
+Response Body :
+{"timestamp":"2024-08-09T15:33:06.550860335+07:00","error":{"code":"TRANSACTION-001","message":"Base and Quoted Coin Code are the same"}}
+
+=======================
+Token : ANC
+Request :
+{"symbol":"ANC-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:33:10.163891282+07:00","error":{"code":"TRANSACTION-000","message":"org.springframework.web.reactive.function.client.WebClientResponseException$BadRequest: 400 Bad Request from GET https://apidev2.vonix.id/v2/exchangeprovider/kucoin/fees/ANC-USDT"}}
+
+Request :
+{"symbol":"ANC-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:33:17.81270906+07:00","error":{"code":"TRANSACTION-000","message":"org.springframework.web.reactive.function.client.WebClientResponseException$BadRequest: 400 Bad Request from GET https://apidev2.vonix.id/v2/exchangeprovider/kucoin/fees/ANC-USDT"}}
+
+=======================
+Token : AXS
+Request :
+{"symbol":"AXS-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 200
+Response Body :
+{"code":"0","message":"success","data":{"baseCoinCode":"AXS","quoteCoinCode":"USDT","orderType":"MARKET","side":"BUY","transactionCode":"TM620793859831296","transactionStatus":"IN_PROGRESS","amountReceive":1.66805671,"amountReceiveCoinType":"BASE_COIN","amountPaid":8.03600,"amountPaidCoinType":"QUOTE_COIN","price":4.796}}
+
+Request :
+{"symbol":"AXS-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 200
+Response Body :
+{"code":"0","message":"success","data":{"baseCoinCode":"AXS","quoteCoinCode":"USDT","orderType":"MARKET","side":"SELL","transactionCode":"TM620793886529472","transactionStatus":"IN_PROGRESS","amountReceive":7.0,"amountReceiveCoinType":"QUOTE_COIN","amountPaid":0E-16,"amountPaidCoinType":"BASE_COIN","price":4.798}}
+
+=======================
+Token : GLCH
+Request :
+{"symbol":"GLCH-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:33:44.481434993+07:00","error":{"code":"TRANSACTION-000","message":"org.springframework.web.reactive.function.client.WebClientResponseException$BadRequest: 400 Bad Request from GET https://apidev2.vonix.id/v2/exchangeprovider/kucoin/fees/GLCH-USDT"}}
+
+Request :
+{"symbol":"GLCH-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:33:52.318262324+07:00","error":{"code":"TRANSACTION-000","message":"org.springframework.web.reactive.function.client.WebClientResponseException$BadRequest: 400 Bad Request from GET https://apidev2.vonix.id/v2/exchangeprovider/kucoin/fees/GLCH-USDT"}}
+
+=======================
+Token : GALAX
+Request :
+{"symbol":"GALAX-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:33:54.094125198+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/GALAX-USDT"}}
+
+Request :
+{"symbol":"GALAX-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:34:00.403290825+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/GALAX-USDT"}}
+
+=======================
+Token : MIR
+Request :
+{"symbol":"MIR-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:34:04.671541605+07:00","error":{"code":"TRANSACTION-000","message":"org.springframework.web.reactive.function.client.WebClientResponseException$BadRequest: 400 Bad Request from GET https://apidev2.vonix.id/v2/exchangeprovider/kucoin/fees/MIR-USDT"}}
+
+Request :
+{"symbol":"MIR-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:34:11.358469316+07:00","error":{"code":"TRANSACTION-000","message":"org.springframework.web.reactive.function.client.WebClientResponseException$BadRequest: 400 Bad Request from GET https://apidev2.vonix.id/v2/exchangeprovider/kucoin/fees/MIR-USDT"}}
+
+=======================
+Token : ORC
+Request :
+{"symbol":"ORC-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:34:13.733142883+07:00","error":{"code":"TRANSACTION-000","message":"org.springframework.web.reactive.function.client.WebClientResponseException$BadRequest: 400 Bad Request from GET https://apidev2.vonix.id/v2/exchangeprovider/kucoin/fees/ORC-USDT"}}
+
+Request :
+{"symbol":"ORC-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:34:19.664717906+07:00","error":{"code":"TRANSACTION-000","message":"org.springframework.web.reactive.function.client.WebClientResponseException$BadRequest: 400 Bad Request from GET https://apidev2.vonix.id/v2/exchangeprovider/kucoin/fees/ORC-USDT"}}
+
+=======================
+Token : TITAN
+Request :
+{"symbol":"TITAN-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:34:20.519095336+07:00","error":{"code":"TRANSACTION-000","message":"org.springframework.web.reactive.function.client.WebClientResponseException$BadRequest: 400 Bad Request from GET https://apidev2.vonix.id/v2/exchangeprovider/kucoin/fees/TITAN-USDT"}}
+
+Request :
+{"symbol":"TITAN-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:34:28.666878558+07:00","error":{"code":"TRANSACTION-000","message":"org.springframework.web.reactive.function.client.WebClientResponseException$BadRequest: 400 Bad Request from GET https://apidev2.vonix.id/v2/exchangeprovider/kucoin/fees/TITAN-USDT"}}
+
+=======================
+Token : UNI
+Request :
+{"symbol":"UNI-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 200
+Response Body :
+{"code":"0","message":"success","data":{"baseCoinCode":"UNI","quoteCoinCode":"USDT","orderType":"MARKET","side":"BUY","transactionCode":"TM620794002200064","transactionStatus":"IN_PROGRESS","amountReceive":1.29007288,"amountReceiveCoinType":"BASE_COIN","amountPaid":8.03600,"amountPaidCoinType":"QUOTE_COIN","price":6.2012}}
+
+Request :
+{"symbol":"UNI-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 200
+Response Body :
+{"code":"0","message":"success","data":{"baseCoinCode":"UNI","quoteCoinCode":"USDT","orderType":"MARKET","side":"SELL","transactionCode":"TM620794043725760","transactionStatus":"IN_PROGRESS","amountReceive":7.0,"amountReceiveCoinType":"QUOTE_COIN","amountPaid":0E-16,"amountPaidCoinType":"BASE_COIN","price":6.2031}}
+
+=======================
+Token : VELO
+Request :
+{"symbol":"VELO-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:35:16.992154727+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/account/settings"}}
+
+Request :
+{"symbol":"VELO-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 200
+Response Body :
+{"code":"0","message":"success","data":{"baseCoinCode":"VELO","quoteCoinCode":"USDT","orderType":"MARKET","side":"SELL","transactionCode":"TM620794110133760","transactionStatus":"IN_PROGRESS","amountReceive":7.0,"amountReceiveCoinType":"QUOTE_COIN","amountPaid":0,"amountPaidCoinType":"BASE_COIN","price":0.009624}}
+
+=======================
+Token : YGG
+Request :
+{"symbol":"YGG-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 200
+Response Body :
+{"code":"0","message":"success","data":{"baseCoinCode":"YGG","quoteCoinCode":"USDT","orderType":"MARKET","side":"BUY","transactionCode":"TM620794127013824","transactionStatus":"IN_PROGRESS","amountReceive":22.85714285,"amountReceiveCoinType":"BASE_COIN","amountPaid":8.03600,"amountPaidCoinType":"QUOTE_COIN","price":0.35}}
+
+Request :
+{"symbol":"YGG-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 200
+Response Body :
+{"code":"0","message":"success","data":{"baseCoinCode":"YGG","quoteCoinCode":"USDT","orderType":"MARKET","side":"SELL","transactionCode":"TM620794143552448","transactionStatus":"IN_PROGRESS","amountReceive":7.0,"amountReceiveCoinType":"QUOTE_COIN","amountPaid":0E-16,"amountPaidCoinType":"BASE_COIN","price":0.3501}}
+
+=======================
+Token : USDP
+Request :
+{"symbol":"USDP-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 200
+Response Body :
+{"code":"0","message":"success","data":{"baseCoinCode":"USDP","quoteCoinCode":"USDT","orderType":"MARKET","side":"BUY","transactionCode":"TM620794162222592","transactionStatus":"IN_PROGRESS","amountReceive":8.04748013,"amountReceiveCoinType":"BASE_COIN","amountPaid":8.03600,"amountPaidCoinType":"QUOTE_COIN","price":0.9941}}
+
+Request :
+{"symbol":"USDP-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 200
+Response Body :
+{"code":"0","message":"success","data":{"baseCoinCode":"USDP","quoteCoinCode":"USDT","orderType":"MARKET","side":"SELL","transactionCode":"TM620794178215872","transactionStatus":"IN_PROGRESS","amountReceive":7.0,"amountReceiveCoinType":"QUOTE_COIN","amountPaid":0E-16,"amountPaidCoinType":"BASE_COIN","price":0.9995}}
+
+=======================
+Token : AOA
+Request :
+{"symbol":"AOA-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:36:10.384016218+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/AOA-USDT"}}
+
+Request :
+{"symbol":"AOA-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:36:19.354103847+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/AOA-USDT"}}
+
+=======================
+Token : BCD
+Request :
+{"symbol":"BCD-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:36:26.647023139+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/BCD-USDT"}}
+
+Request :
+{"symbol":"BCD-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:36:32.813645638+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/BCD-USDT"}}
+
+=======================
+Token : ONG
+Request :
+{"symbol":"ONG-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:36:34.593088363+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/ONG-USDT"}}
+
+Request :
+{"symbol":"ONG-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:36:42.613999413+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/ONG-USDT"}}
+
+=======================
+Token : RIF
+Request :
+{"symbol":"RIF-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:36:45.88319048+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/RIF-USDT"}}
+
+Request :
+{"symbol":"RIF-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:36:51.443276388+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/RIF-USDT"}}
+
+=======================
+Token : TRIBE
+Request :
+{"symbol":"TRIBE-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:36:52.189902402+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/TRIBE-USDT"}}
+
+Request :
+{"symbol":"TRIBE-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:36:58.305322649+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/TRIBE-USDT"}}
+
+=======================
+Token : AION
+Request :
+{"symbol":"AION-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:36:59.553544206+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/AION-USDT"}}
+
+Request :
+{"symbol":"AION-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:37:07.455929606+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/AION-USDT"}}
+
+=======================
+Token : DAI
+Request :
+{"symbol":"DAI-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:37:12.621703031+07:00","error":{"code":"TRANSACTION-000","message":"org.springframework.web.reactive.function.client.WebClientResponseException$BadRequest: 400 Bad Request from GET https://apidev2.vonix.id/v2/exchangeprovider/kucoin/fees/DAI-USDT"}}
+
+Request :
+{"symbol":"DAI-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:37:23.057659708+07:00","error":{"code":"TRANSACTION-000","message":"org.springframework.web.reactive.function.client.WebClientResponseException$BadRequest: 400 Bad Request from GET https://apidev2.vonix.id/v2/exchangeprovider/kucoin/fees/DAI-USDT"}}
+
+=======================
+Token : LBR
+Request :
+{"symbol":"LBR-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 200
+Response Body :
+{"code":"0","message":"success","data":{"baseCoinCode":"LBR","quoteCoinCode":"USDT","orderType":"MARKET","side":"BUY","transactionCode":"TM620794377420736","transactionStatus":"IN_PROGRESS","amountReceive":140.59753954,"amountReceiveCoinType":"BASE_COIN","amountPaid":8.04400,"amountPaidCoinType":"QUOTE_COIN","price":0.0569}}
+
+Request :
+{"symbol":"LBR-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 200
+Response Body :
+{"code":"0","message":"success","data":{"baseCoinCode":"LBR","quoteCoinCode":"USDT","orderType":"MARKET","side":"SELL","transactionCode":"TM620794427508224","transactionStatus":"IN_PROGRESS","amountReceive":7.0,"amountReceiveCoinType":"QUOTE_COIN","amountPaid":0E-16,"amountPaidCoinType":"BASE_COIN","price":0.0576}}
+
+=======================
+Token : FLM
+Request :
+{"symbol":"FLM-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:38:09.64355128+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/FLM-USDT"}}
+
+Request :
+{"symbol":"FLM-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:38:15.734113122+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/FLM-USDT"}}
+
+=======================
+Token : MBOX
+Request :
+{"symbol":"MBOX-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:38:18.125523965+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/MBOX-USDT"}}
+
+Request :
+{"symbol":"MBOX-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:38:28.903836515+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/MBOX-USDT"}}
+
+=======================
+Token : VTHO
+Request :
+{"symbol":"VTHO-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:38:35.038732646+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/VTHO-USDT"}}
+
+Request :
+{"symbol":"VTHO-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:38:43.434168053+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/VTHO-USDT"}}
+
+=======================
+Token : POWR
+Request :
+{"symbol":"POWR-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:38:50.190216551+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/POWR-USDT"}}
+
+Request :
+{"symbol":"POWR-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:38:58.476631697+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/POWR-USDT"}}
+
+=======================
+Token : BAKE
+Request :
+{"symbol":"BAKE-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:38:59.004038752+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/BAKE-USDT"}}
+
+Request :
+{"symbol":"BAKE-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:39:05.504167845+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/BAKE-USDT"}}
+
+=======================
+Token : SNT
+Request :
+{"symbol":"SNT-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:39:07.73347666+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/SNT-USDT"}}
+
+Request :
+{"symbol":"SNT-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:39:15.115874632+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/SNT-USDT"}}
+
+=======================
+Token : ALPACA
+Request :
+{"symbol":"ALPACA-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:39:17.384724167+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/ALPACA-USDT"}}
+
+Request :
+{"symbol":"ALPACA-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:39:22.90399496+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/ALPACA-USDT"}}
+
+=======================
+Token : LAT
+Request :
+{"symbol":"LAT-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:39:23.423987778+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/LAT-USDT"}}
+
+Request :
+{"symbol":"LAT-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:39:29.749806077+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/LAT-USDT"}}
+
+=======================
+Token : MITH
+Request :
+{"symbol":"MITH-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:39:29.82014662+07:00","error":{"code":"TRANSACTION-000","message":"Double device indicated form UUID ffbdf55b-051f-4011-a4dd-69fa18777a4b"}}
+
+Request :
+{"symbol":"MITH-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:39:36.886267663+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/MITH-USDT"}}
+
+=======================
+Token : STEEM
+Request :
+{"symbol":"STEEM-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:39:38.83436678+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/STEEM-USDT"}}
+
+Request :
+{"symbol":"STEEM-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:39:46.044622667+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/STEEM-USDT"}}
+
+=======================
+Token : T
+Request :
+{"symbol":"T-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:39:49.897106526+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/T-USDT"}}
+
+Request :
+{"symbol":"T-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:39:56.374938815+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/T-USDT"}}
+
+=======================
+Token : COS
+Request :
+{"symbol":"COS-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:39:57.043914399+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/COS-USDT"}}
+
+Request :
+{"symbol":"COS-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:40:06.396424692+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/COS-USDT"}}
+
+=======================
+Token : OOKI
+Request :
+{"symbol":"OOKI-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:40:08.131515848+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/OOKI-USDT"}}
+
+Request :
+{"symbol":"OOKI-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:40:14.155618659+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/OOKI-USDT"}}
+
+=======================
+Token : WING
+Request :
+{"symbol":"WING-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:40:14.694211419+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/WING-USDT"}}
+
+Request :
+{"symbol":"WING-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:40:21.06762536+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/WING-USDT"}}
+
+=======================
+Token : CTXC
+Request :
+{"symbol":"CTXC-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:40:22.584859492+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/CTXC-USDT"}}
+
+Request :
+{"symbol":"CTXC-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:40:29.776192943+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/CTXC-USDT"}}
+
+=======================
+Token : STMX
+Request :
+{"symbol":"STMX-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:40:32.155070507+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/STMX-USDT"}}
+
+Request :
+{"symbol":"STMX-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:40:41.677432678+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/STMX-USDT"}}
+
+=======================
+Token : NRG
+Request :
+{"symbol":"NRG-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:40:45.678143317+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/NRG-USDT"}}
+
+Request :
+{"symbol":"NRG-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:40:53.018263378+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/NRG-USDT"}}
+
+=======================
+Token : SPELL
+Request :
+{"symbol":"SPELL-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:40:53.090268214+07:00","error":{"code":"TRANSACTION-000","message":"Double device indicated form UUID ffbdf55b-051f-4011-a4dd-69fa18777a4b"}}
+
+Request :
+{"symbol":"SPELL-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:40:58.634969086+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/SPELL-USDT"}}
+
+=======================
+Token : HT
+Request :
+{"symbol":"HT-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:40:59.225176771+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/HT-USDT"}}
+
+Request :
+{"symbol":"HT-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:41:05.23763533+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/HT-USDT"}}
+
+=======================
+Token : CITY
+Request :
+{"symbol":"CITY-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:41:06.355259316+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/CITY-USDT"}}
+
+Request :
+{"symbol":"CITY-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:41:13.266392191+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/CITY-USDT"}}
+
+=======================
+Token : BNT
+Request :
+{"symbol":"BNT-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:41:13.337751373+07:00","error":{"code":"TRANSACTION-000","message":"Double device indicated form UUID ffbdf55b-051f-4011-a4dd-69fa18777a4b"}}
+
+Request :
+{"symbol":"BNT-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:41:20.374546923+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/BNT-USDT"}}
+
+=======================
+Token : MDX
+Request :
+{"symbol":"MDX-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:41:22.246544697+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/MDX-USDT"}}
+
+Request :
+{"symbol":"MDX-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:41:29.766446818+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/MDX-USDT"}}
+
+=======================
+Token : REP
+Request :
+{"symbol":"REP-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:41:32.914648551+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/REP-USDT"}}
+
+Request :
+{"symbol":"REP-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:41:41.903918515+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/REP-USDT"}}
+
+=======================
+Token : BNX
+Request :
+{"symbol":"BNX-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:41:45.60840127+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/BNX-USDT"}}
+
+Request :
+{"symbol":"BNX-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:41:54.168087738+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/BNX-USDT"}}
+
+=======================
+Token : PNT
+Request :
+{"symbol":"PNT-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:41:56.485393499+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/PNT-USDT"}}
+
+Request :
+{"symbol":"PNT-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:42:03.655602502+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/PNT-USDT"}}
+
+=======================
+Token : IDEX
+Request :
+{"symbol":"IDEX-USDT","orderType":"MARKET","side":"BUY","amount":"8.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:42:06.34498143+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/IDEX-USDT"}}
+
+Request :
+{"symbol":"IDEX-USDT","orderType":"MARKET","side":"SELL","amount":"7.0","amountCoinType":"QUOTE_COIN","price":0}
+Response code : 500
+Response Body :
+{"timestamp":"2024-08-09T15:42:12.776071598+07:00","error":{"code":"TRANSACTION-000","message":"500 Internal Server Error from GET https://apidev2.vonix.id/v1/market/ticker/current/IDEX-USDT"}}

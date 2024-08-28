@@ -1,0 +1,18 @@
+# Logfile created on 2024-08-09 20:01:55 +0700 by logger.rb/v1.6.0
+E, [2024-08-09T20:01:55.101247 #42497] ERROR -- : [API] User login with blank password
+
+URL: https://apidev2.vonix.id/v1/auth/login
+
+ERROR: exit
+
+REQUEST HEADERS:
+{
+  "Content-Type": "application/json"
+}
+
+REQUEST BODY:
+{"email":"nicko.sebastian@vonix.id","password":""}
+
+RESPONSE:
+
+

@@ -1,0 +1,165 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "totalCoin": {
+      "type": "integer"
+    },
+    "topCoins": {
+      "type": "integer"
+    },
+    "remainingCoins": {
+      "type": "integer"
+    },
+    "coins": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "code": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "balance": {
+              "type": "number"
+            },
+            "estimations": {
+              "type": "object",
+              "properties": {
+                "inIdr": {
+                  "type": "number"
+                },
+                "inUsdt": {
+                  "type": "number"
+                },
+                "inBtc": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "inIdr",
+                "inUsdt",
+                "inBtc"
+              ]
+            },
+            "percentage": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "code",
+            "name",
+            "balance",
+            "estimations",
+            "percentage"
+          ]
+        }
+      ]
+    },
+    "topCoinsPercentage": {
+      "type": "number"
+    },
+    "remainingCoinsPercentage": {
+      "type": "number"
+    },
+    "totalCoinsEstimations": {
+      "type": "object",
+      "properties": {
+        "inIdr": {
+          "type": "number"
+        },
+        "inUsdt": {
+          "type": "number"
+        },
+        "inBtc": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "inIdr",
+        "inUsdt",
+        "inBtc"
+      ]
+    },
+    "topCoinsEstimations": {
+      "type": "object",
+      "properties": {
+        "inIdr": {
+          "type": "number"
+        },
+        "inUsdt": {
+          "type": "number"
+        },
+        "inBtc": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "inIdr",
+        "inUsdt",
+        "inBtc"
+      ]
+    },
+    "remainingCoinsEstimations": {
+      "type": "object",
+      "properties": {
+        "inIdr": {
+          "type": "null"
+        },
+        "inUsdt": {
+          "type": "null"
+        },
+        "inBtc": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "inIdr",
+        "inUsdt",
+        "inBtc"
+      ]
+    },
+    "ovrProfitAndLossEstimations": {
+      "type": "object",
+      "properties": {
+        "inIdr": {
+          "type": "number"
+        },
+        "inUsdt": {
+          "type": "number"
+        },
+        "inBtc": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "inIdr",
+        "inUsdt",
+        "inBtc"
+      ]
+    },
+    "ovrProfitAndLossPercentage": {
+      "type": "number"
+    },
+    "ovrPnLPercentageHundred": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "totalCoin",
+    "topCoins",
+    "remainingCoins",
+    "coins",
+    "topCoinsPercentage",
+    "remainingCoinsPercentage",
+    "totalCoinsEstimations",
+    "topCoinsEstimations",
+    "remainingCoinsEstimations",
+    "ovrProfitAndLossEstimations",
+    "ovrProfitAndLossPercentage",
+    "ovrPnLPercentageHundred"
+  ]
+}

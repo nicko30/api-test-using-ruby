@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "transactionId": {
+      "type": "string"
+    },
+    "externalTransactionId": {
+      "type": "string"
+    },
+    "barcodeType": {
+      "type": "string"
+    },
+    "barcodeText": {
+      "type": "string"
+    },
+    "checkoutMobileUrl": {
+      "type": ["string", "null"]
+    },
+    "checkoutWebUrl": {
+      "type": ["string", "null"]
+    },
+    "amount": {
+      "type": "integer"
+    },
+    "expTime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "paymentInstructions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "logo": {
+            "type": ["string", "null"]
+          },
+          "logoUrl": {
+            "type": ["string", "null"]
+          },
+          "details": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "language": {
+                  "type": "string"
+                },
+                "instruction": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "required": ["language", "instruction"]
+            }
+          }
+        },
+        "required": ["name", "details"]
+      }
+    }
+  },
+  "required": [
+    "transactionId",
+    "externalTransactionId",
+    "barcodeType",
+    "barcodeText",
+    "amount",
+    "expTime",
+    "paymentInstructions"
+  ]
+}

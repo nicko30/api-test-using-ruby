@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "virtualAccountNumber": {
+      "type": "string",
+      "pattern": "^\\d+$"
+    },
+    "expiredTime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "xenditVirtualAccountId": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "externalId": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "paymentInstructions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "logo": {
+            "type": "string"
+          },
+          "logoUrl": {
+            "type": "string",
+            "format": "uri"
+          },
+          "details": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "language": {
+                  "type": "string"
+                },
+                "instructions": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "required": ["language", "instructions"]
+            }
+          }
+        },
+        "required": ["name", "logo", "logoUrl", "details"]
+      }
+    }
+  },
+  "required": [
+    "virtualAccountNumber",
+    "expiredTime",
+    "xenditVirtualAccountId",
+    "externalId",
+    "name",
+    "paymentInstructions"
+  ]
+}
