@@ -224,21 +224,11 @@ Feature: Playground
   Scenario: [API] User create buy market order with interval and range amount
     Given client login using "TRADING" account
     #And client create BUY "ETHUP" market order between "0.4" and "0.6" with interval "100" times
-    And client create BUY "ETHUP" market order between "1" and "2" with interval "100" times
+    And client create BUY "RENDER" market order between "1" and "2" with interval "1" times
 
   @API @TEST_API-15
   Scenario: [API] User create sell market order with interval and range amount
     Given client login using "TRADING" account
     #And client create SELL "XRP" market order between "0.00001" and "0.00005" with interval "15" times
-    And client create SELL "ETHUP" market order between "0.2" and "0.3" with interval "100" times
+    And client create SELL "RENDER" market order between "0.1" and "0.2" with interval "1" times
     #And client create SELL "BTC" market order between "15" and "20" with interval "15" times
-
-  @API @TEST_ATI-98
-  Scenario: [API] User buy and sell for all coins on vonix
-    Given client login using "TRADING" account
-    Then client buy and sell for all coins on vonix
-
-  @API @TEST_ATI-99
-  Scenario: [API] User withdraw using all bank account
-    Given client login using "TRADING" account
-    Then client withdraw using all bank with minimum balance

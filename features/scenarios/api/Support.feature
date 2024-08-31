@@ -1,5 +1,15 @@
 Feature: Supporting feature for test
 
+  @API @TEST_ATI-98
+  Scenario: [API] User buy and sell for all coins on vonix
+    Given client login using "TRADING" account
+    Then client buy and sell for all coins on vonix
+
+  @API @TEST_ATI-99
+  Scenario: [API] User withdraw using all bank account
+    Given client login using "TRADING" account
+    Then client withdraw using all bank with minimum balance
+
   @API @TEST_API-100
   Scenario: [API] User add new all banks
     Given client login using "TRADING" account
