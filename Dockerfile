@@ -54,4 +54,7 @@ COPY Gemfile ./
 # Install all ruby gems
 RUN bundle install
 
+# Copy the .env file into the container
+COPY .env .env
+
 COPY . .
