@@ -35,7 +35,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Optionally, set an environment variable for Python 3
-ENV PYTHON3_HOME /usr/bin/python3
+ENV PYTHON3_HOME=/usr/bin/python3
 
 RUN wget https://github.com/postmodern/ruby-install/releases/download/v0.9.3/ruby-install-0.9.3.tar.gz && \
     tar -xzvf ruby-install-0.9.3.tar.gz && \
