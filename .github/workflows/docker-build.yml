@@ -48,6 +48,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Run command for checking .env variable
+        run: |
+          # Run commands in the Docker container
+          cat .env
+
       - name: Run your script inside the container
         run: |
           # Run commands in the Docker container
