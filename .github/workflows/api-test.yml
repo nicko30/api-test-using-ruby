@@ -20,8 +20,7 @@ jobs:
         run: echo "${{ secrets.DOTENV_FILE }}" > .env
 
       - name: Test print all environment variables
-        run: |
-          env
+        run: cat .env
 
       # Set up Ruby
       - name: Set up Ruby
