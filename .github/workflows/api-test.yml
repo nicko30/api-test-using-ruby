@@ -1,0 +1,34 @@
+name: Ruby API Tests
+
+on:
+  workflow_dispatch:
+    inputs:
+      cucumber_tags:
+        description: 'Cucumber tags to run'
+        required: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Set up Ruby
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.0'
+          bundler-cache: true   # Cache dependencies to improve speed
+
+      # Install dependencies
+      - name: Install dependencies
+        run: |
+          bundle install
+
+      # Run the API tests using Cucumber with dynamic tags
+      - name: Run Cucumber tests
+        run: |
+          bundle exec cucumber --tags "${{ github.event.inputs.cucumber_tags }}"
