@@ -60,11 +60,11 @@ When(/^client sends a (GET|POST|PUT|DELETE|PATCH) request to "(.*)"(?: with body
 
     # if @response.code != 200
     #
-    # puts "Request : "
-    # puts @body
-    # puts "Response code : " + @response.code.to_s
-    # puts "Response Body : "
-    # puts @response.body
+    puts "Request : "
+    puts @body
+    puts "Response code : " + @response.code.to_s
+    puts "Response Body : "
+    puts @response.body
     # puts "======================="
     # puts ""
     # end
