@@ -1,5 +1,10 @@
 Feature: Supporting feature for test
 
+  @API @TEST_API-97
+  Scenario: [API] Check all vonix coins on kucoin
+    Given client login using "TRADING" account
+    Then client compare all vonix coins with kucoin
+
   @API @TEST_ATI-98
   Scenario: [API] User buy and sell for all coins on vonix
     Given client login using "TRADING" account
