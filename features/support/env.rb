@@ -25,6 +25,8 @@ require "google_drive"
 require "parallel"
 require "roo"
 require "English"
+require 'bigdecimal'
+require 'bigdecimal/util'
 require_relative "../helpers/api/api"
 require_relative "api/auth/auth"
 require_relative "logger"

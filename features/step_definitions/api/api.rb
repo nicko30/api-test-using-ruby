@@ -60,11 +60,11 @@ When(/^client sends a (GET|POST|PUT|DELETE|PATCH) request to "(.*)"(?: with body
 
     # if @response.code != 200
     #
-    puts "Request : "
-    puts @body
-    puts "Response code : " + @response.code.to_s
-    puts "Response Body : "
-    puts @response.body
+    # puts "Request : "
+    # puts @body
+    # puts "Response code : " + @response.code.to_s
+    # puts "Response Body : "
+    # puts @response.body
     # puts "======================="
     # puts ""
     # end
@@ -762,3 +762,21 @@ When(/^client set request timeout to "(.*ms|.*s)"$/) do |timeout|
     timeout
   ]
 end
+
+# Given(/^test$/) do
+#   webhook_url = 'https://chat.googleapis.com/v1/spaces/AAAAWw0OKio/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=781XKLfbrCA2Eb1T8TO43PndbW3oFAeaOFNc2qFD7r0'
+#
+#   # The message you want to send
+#   message = {
+#     text: "Hello, this is a test message from Neng Geulis!"
+#   }
+#
+#   # Send the message using HTTParty
+#   response = HTTParty.post(
+#     webhook_url,
+#     body: message.to_json,
+#     headers: { 'Content-Type' => 'application/json' }
+#   )
+#
+#   puts response.body
+# end
