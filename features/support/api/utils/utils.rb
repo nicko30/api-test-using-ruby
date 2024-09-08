@@ -91,18 +91,6 @@ class Utils
       date
     end
 
-    def store_to_csv(path_file, headers, data)
-      CSV.open(path_file, "w") do |csv|
-        # Write the headers row
-        csv << headers
-
-        # Write each data row
-        data.transpose.each do |row|
-          csv << row[0..headers.length - 1]
-        end
-      end
-    end
-
     # extract string value using regex
     def extract_string(string, regex_pattern)
       regex = Regexp.new(regex_pattern)
@@ -220,46 +208,6 @@ class Utils
       (1..5).cover?(date.wday)
     end
 
-    # This method checks if a given date, represented as a string, is a market date.
-    # It does so by comparing the @date_string to a list of market holidays.
-    def market_date?(date_string)
-      # Extract a list of market holidays from a CSV file named "market_holidays"
-      # The :holiday_date is used as the column to extract from the CSV file.
-      market_holidays = extract_csv_file("features/assets/findata/market_holidays", :holiday_date)
-
-      # Check if the provided date string is NOT included in the list of market holidays.
-      # If it's not included, it means it is a market date, and the method returns true.
-      # If it is included, it means it is a not market date, and the method returns false.
-      weekday?(date_string) && !market_holidays.include?(date_string)
-    end
-
-    # This method generates a list of market dates between a given start date and the current date.
-    # It allows specifying a custom date format and filters out non-market dates.
-    def market_date(start_date, date_format_code = "%Y-%m-%d")
-      # Convert the provided start date into a Date object for easier manipulation.
-      start_date = Date.parse(start_date)
-
-      # Determine the current date as the end date for the date range.
-      end_date = Date.today
-
-      # Create a range of dates from the start date to the end date.
-      date_range = (start_date..end_date)
-
-      # Initialize an empty array to store the market dates.
-      market_dates = []
-
-      # Iterate through the date range and check if each date is a market date.
-      date_range.each do |date|
-        # Check if the date is a market date by calling the market_date? method.
-        # If it is a market date, format it according to the specified date format
-        # and add it to the market_dates array.
-        market_dates << date_format(date, date_format_code) if market_date?(date.to_s)
-      end
-
-      # Return the array of market dates.
-      market_dates
-    end
-
     # Save data to a file, creating the necessary folder structure if it doesn't exist.
     # @param file_path [String] The path to the file where data will be saved.
     # @param data [String] The data to be appended to the file.
@@ -313,74 +261,10 @@ class Utils
       end
     end
 
-    def cucumber_report(cucumber_json_file)
-      cucumber_json = JSON.parse(File.read(cucumber_json_file)) # Parse 'cucumber.json'
-
-      begin
-        report_name = cucumber_json[0]["name"] # Get report name from cucumber.json
-        elements = cucumber_json.flat_map { |e| e["elements"] } # Extracts the 'elements' array from 'cucumber.json'
-      rescue NoMethodError
-        HTTParty.post(
-          ENV["QE_SLACK_WEBHOOK"],
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: {
-            blocks: [
-              {
-                "type": "section",
-                "text": {
-                  "type": "mrkdwn",
-                  "text": ":alert-siren:Failed run all test, please check gitlab pipeline! <!channel>"
-                }
-              }
-            ]
-          }.to_json
-        )
-        raise "Failed run all test, please check gitlab pipeline!"
-      end
-
-      # Get test success rate for all test set tag
-      t_scenario = elements.count
-      t_failed_hooks_scenario = elements.flat_map { |e| e["before"] }.compact.reject { |b| b["result"]["status"] == "passed" }.count
-      t_failed_steps_scenario = elements.flat_map { |e| e["steps"] }.compact.select { |s| s["result"]["status"] == "failed" }.count
-      t_failed_scenario = t_failed_hooks_scenario + t_failed_steps_scenario
-      t_passed_scenario = t_scenario - t_failed_scenario
-      t_success_rate = (t_passed_scenario.to_f / t_scenario * 100).round(2)
-
-      {
-        name: report_name,
-        total_scenario: t_scenario,
-        total_passed: t_passed_scenario,
-        total_failed: t_failed_scenario,
-        success_rate: t_success_rate,
-        elements: elements
-      }
-    end
-
-    def slack_id_qe_picket
-      begin
-        qes = ENV['SLACK_ID_QE'].split(",")
-        "<@#{qes[Time.now.strftime("%U").to_i % qes.size].strip}>"
-      rescue NoMethodError
-        "<!channel>"
-      end
-    end
-
-    def slack_ids
-      sqa = ENV["SLACK_ID_SQA"] || "<!channel>"
-      sqa_group = ENV["SLACK_ID_GROUP"] || ""
-
-      sqa = sqa.include?(",") ? sqa.split(",").map { |item| "<@#{item.strip}>" }.join(" ") : "<@#{sqa.strip}>"
-
-      sqa_group = sqa_group.include?(",") ? sqa_group.split(",").map { |item| "<!subteam^#{item}>" }.join(" ") : "<!subteam^#{sqa_group}>" unless sqa_group == ""
-      "#{slack_id_qe_picket} #{sqa} #{sqa_group}"
-    end
-
-    def send_to_slack(message_payload)
-      # Send slack report using slack webhook
+    def send_to_google_chat(message_payload)
+      # Send chat to google chat using webhook
       response = HTTParty.post(
-        ENV["SLACK_WEBHOOK"],
+        ENV["GOOGLE_CHAT_WEBHOOK"],
         headers: {
           "Content-Type": "application/json"
         },
@@ -396,20 +280,12 @@ class Utils
       MESSAGE
 
       HTTParty.post(
-        ENV["SLACK_WEBHOOK"],
+        ENV["GOOGLE_CHAT_WEBHOOK"],
         headers: {
           "Content-Type": "application/json"
         },
         body: {
-          blocks: [
-            {
-              "type": "section",
-              "text": {
-                "type": "mrkdwn",
-                "text": "#{error_message}"
-              }
-            }
-          ]
+          text: "#{error_message}"
         }.to_json
       )
     end
@@ -517,52 +393,6 @@ class Utils
       when 5001..Float::INFINITY then 0.20
       else
         "Not Common Stock"
-      end
-    end
-
-    def calculate_ara_arb(price)
-      factor = ara_arb_factor(price)
-      ara = round_for_ara_arb("ARA", price * (1 + factor))
-      arb = round_for_ara_arb("ARB", price * (1 - factor))
-      arb = 50 if arb < 50
-
-      [format_number(ara), format_number(arb)]
-    end
-
-    def calculate_ara_arb_for_special_stock(previous)
-      if previous <= 10
-        ara = round_for_ara_arb("ARA", previous + 1)
-        arb = round_for_ara_arb("ARB", previous - 1)
-        arb = 1 if arb < 1
-      else
-        ara = round_for_ara_arb("ARA", previous * 1.1)
-        arb = round_for_ara_arb("ARB", previous * 0.9)
-      end
-
-      [format_number(ara), format_number(arb)]
-    end
-
-    def round_for_ara_arb(type, value)
-      case type.upcase
-      when "ARA"
-        round_method = :floor
-      when "ARB"
-        round_method = :ceil
-      else
-        raise ArgumentError, "Invalid type: #{type}"
-      end
-
-      case value
-      when 1..200
-        (value / 1.0).send(round_method) * 1
-      when 201..500
-        (value / 2.0).send(round_method) * 2
-      when 501..2000
-        (value / 5.0).send(round_method) * 5
-      when 2001..5000
-        (value / 10.0).send(round_method) * 10
-      else
-        (value / 25.0).send(round_method) * 25
       end
     end
 
