@@ -16,6 +16,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Create .env file from secret
+        run: |
+          echo "${{ secrets.DOTENV_FILE }}" > .env
+
       # Set up Ruby
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
