@@ -19,9 +19,6 @@ jobs:
       - name: Create .env file from secret
         run: echo "${{ secrets.DOTENV_FILE }}" > .env
 
-      - name: Test print all environment variables
-        run: cat .env
-
       # Set up Ruby
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
