@@ -290,17 +290,6 @@ class Utils
       )
     end
 
-    def slack_report_assets(cucumber_report)
-      all_passed = cucumber_report[:total_failed].zero?
-
-      {
-        "all_passed" => all_passed,
-        "emoji" => all_passed ? ":white_check_mark:" : ":alert-siren:",
-        "button" => all_passed ? "primary" : "danger",
-        "tag" => ENV["TAGS"]
-      }
-    end
-
     def duplicate_array?(array_data)
       seen = {}
       duplicates = []
@@ -383,16 +372,6 @@ class Utils
         (number % 10).zero? ? number : number + (10 - (number % 10))
       else
         (number % 25).zero? ? number : number + (25 - (number % 25))
-      end
-    end
-
-    def ara_arb_factor(price)
-      case price
-      when 50..200 then 0.35
-      when 201..5000 then 0.25
-      when 5001..Float::INFINITY then 0.20
-      else
-        "Not Common Stock"
       end
     end
 
