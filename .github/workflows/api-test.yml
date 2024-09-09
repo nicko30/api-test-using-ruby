@@ -3,7 +3,7 @@ name: Ruby API Tests
 on:
   # Schedule the workflow to run at 10:00 AM Jakarta time (GMT+7)
   schedule:
-    - cron: '0 3 * * *'  # 3:00 AM UTC = 10:00 AM Jakarta (GMT+7)
+    - cron: '30 10 * * *'  # 3:00 AM UTC = 10:00 AM Jakarta (GMT+7)
 
   workflow_dispatch:
     inputs:
@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Create .env file from secret
-        run: echo "${{ secrets.DOTENV_FILE }}" > .env
+        run: echo '${{ secrets.DOTENV_FILE }}' > .env
 
       # Set up Ruby
       - name: Set up Ruby
