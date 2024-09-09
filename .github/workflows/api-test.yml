@@ -39,4 +39,4 @@ jobs:
       # Run the API tests using Cucumber with dynamic tags
       - name: Run Cucumber tests
         run: |
-          bundle exec cucumber --tags ${{ github.event.inputs.cucumber_tags }}
+          bundle exec cucumber --tags ${{ github.event.inputs.cucumber_tags || '@TEST_API-97' }}
