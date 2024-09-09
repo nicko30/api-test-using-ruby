@@ -15,7 +15,7 @@ Then(/client compare all vonix coins with kucoin/) do
   kucoin_symbols = APIHelper.extract_json_values(@response.body, "data.name")
 
   # Initialize a string to hold the names of coins that are on Vonix but not on Kucoin
-  missing_coins = ""
+  missing_coins = []
 
   # Iterate through each Vonix coin
   vonix_coins.each do |coin|
@@ -25,13 +25,13 @@ Then(/client compare all vonix coins with kucoin/) do
       coin_with_usdt_pair = coin["code"] + "-USDT"
 
       # If the coin does not exist on Kucoin, add it to the missing_coins list
-      missing_coins += coin["code"] + ", " unless kucoin_symbols.include?(coin_with_usdt_pair)
+      missing_coins << coin["code"] unless kucoin_symbols.include?(coin_with_usdt_pair)
     end
   end
 
   unless missing_coins.empty?
     notification_message = {
-      text: "Please delete these coins on Vonix: #{missing_coins}"
+      text: "Please delete these coins on Vonix: #{missing_coins.join(', ')}"
     }
 
     # Send the message to Google Chat
